@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <h1>WS test</h1>
+    <script type="text/javascript">
+    let wsUrl = 'ws://192.168.137.2:8899'
+    let ws = new WebSocket(wsUrl)
+    ws.onopen = function(evt) {
+        console.log('ws connected.')
+        ws.send('greeting from client')
+    }
+    ws.onmessage = function(evt) {
+        console.log(evt.data)
+    }
+    ws.onclose = function(evt) {
+        console.log('ws closed')
+    }
+    ws.onerror = function(evt, e) {
+        console.log('ws error: ' + evt.data)
+    }
+    </script>
+</body>
+
+</html>

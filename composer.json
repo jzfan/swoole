@@ -1,0 +1,11 @@
+{
+    "name": "fan/swoole",
+    "description": "some swoole demo",
+    "authors": [
+        {
+            "name": "jzfan",
+            "email": "jzmcc@163.com"
+        }
+    ],
+    "require": {}
+}
